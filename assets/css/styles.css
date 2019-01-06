@@ -1,88 +1,123 @@
-/* GENERAL STYLING */
+/* GENERAL STYLES */
 
-body {
-    height: 200px;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+}
+
+section {
     display: flex;
     flex-direction: column;
-    font-family: "Open Sans";
+    align-items: center;
+    padding: 100px 80px;
 }
 
 /* HEADER STYLING */
 
 header {
-    /* background-color: orange; */
+    position: absolute;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 15px 30px 0 30px;
+    align-items: center;
+    padding: 35px 100px 0;
     opacity: 0;
-    animation: 1s fadeIn 0.5s forwards;
+    animation: 1s fadein 0.5s forwards;
+    color: #fff;
 }
 
-@keyframes fadeIn {
+@keyframes fadein {
     100% {
         opacity: 1;
     }
 }
 
-.header-left {
-    display: flex;
+header h2 {
+    font-family: "Quicksand", sans-serif;
 }
 
-.header-right {
+header nav {
     display: flex;
+    margin-right: -15px;
+}
+
+header nav li {
+    margin: 0 15px;
 }
 
 /* HERO STYLING */
 
 .hero {
-    background-image: url("../img/main.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-li a {
-    text-decoration: none;
-    opacity: 0.75;
-    padding: 10px;
-}
-
-li>a:hover {
-    opacity: 1;
-}
-
-.jumbotron {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     justify-content: center;
-    align-items: center;
-
-    flex: 1 0 500px;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
 }
 
-#jumbotronButton {
-    background-color: black;
-    color: white;
-    padding: 15px 100px;
-    border-radius: 5px;
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #80a3db;
 }
 
-.work {
-    display: flex;
-    flex-direction: column;
+.hero h1 {
+    font: bold 60px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font: normal 28px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+}
+
+.hero-content {
+    opacity: 0;
+    margin-top: 100px;
+    animation: 1s slidefade fowards;
+}
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
 }
