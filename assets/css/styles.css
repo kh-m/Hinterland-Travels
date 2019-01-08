@@ -173,3 +173,20 @@ header nav li {
 .destinations .grid li.large {
     flex-basis: 70%;
 }
+
+/* PACKAGES SECTION */
+
+.packages .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.packakes .grid li i {
+    color: #8c9eff;
+}
+
+.packages .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
+}
