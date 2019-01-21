@@ -18,7 +18,7 @@ ul, nav {
 a {
     text-decoration: none;
     opacity: 0.75;
-    color: #fff;
+    color: black;
 }
 
 a:hover {
@@ -95,6 +95,10 @@ header {
     color: #fff;
 }
 
+header nav li {
+    color: black;
+}
+
 @keyframes fadein {
     100% {
         opacity: 1;
@@ -149,11 +153,13 @@ header nav li {
 .hero h1 {
     font: bold 60px "Open Sans", sans-serif;
     margin-bottom: 15px;
+    color: rgb(0, 44, 189);
 }
 
 .hero h3 {
     font: normal 28px "Open Sans", sans-serif;
     margin-bottom: 40px;
+    color: rgb(0, 44, 189);
 }
 
 .hero a.btn {
@@ -231,7 +237,7 @@ header nav li {
     text-align: center;
 }
 
-.packakes .grid li i {
+.packages .grid li i {
     color: #8c9eff;
 }
 
